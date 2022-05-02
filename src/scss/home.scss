@@ -1,0 +1,25 @@
+.home {
+    &__products {
+    }
+}
+.products {
+    @include adaptiveValue("padding-top", 110, 40, 1110, 767.98, 1);
+    @include adaptiveValue("padding-bottom", 110, 40, 1110, 767.98, 1);
+    &__container {
+    }
+
+    &__heading {
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 100, 30, 1110, 767.98, 1);
+        }
+    }
+
+    &__body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: rem(32);
+        @media (max-width: $mobile) {
+            grid-template-columns: 1fr;
+        }
+    }
+}

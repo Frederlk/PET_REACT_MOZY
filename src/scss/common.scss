@@ -135,9 +135,84 @@
 //========================================================================================================================================================
 
 .heading {
+    text-align: center;
     &__title {
+        font-weight: 700;
+        @include adaptiveValue("font-size", 44, 32, 1110, 479.98, 1);
+        line-height: math.div(57, 44);
+        color: $primary;
+        &:not(:last-child) {
+            margin-bottom: rem(16);
+        }
     }
 
     &__text {
+        line-height: math.div(27, 16);
+    }
+}
+
+//========================================================================================================================================================
+
+.item-product {
+    background-color: $white;
+    box-shadow: 0px 0px rem(8) rgba(22, 23, 72, 0.07), 0px rem(25) rem(35) rgba(22, 23, 72, 0.08);
+    border-radius: rem(8);
+    overflow: hidden;
+    @include adaptiveValue("padding", 64, 24);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+
+    transition: box-shadow 0.3s ease 0s;
+    @media (any-hover: hover) {
+        &:hover {
+            box-shadow: 0px 0px rem(18) rgba(22, 23, 72, 0.1), 0px rem(35) rem(45) rgba(22, 23, 72, 0.1);
+        }
+    }
+    &__content {
+        flex: 1 1 auto;
+        @media (min-width: $mobileSmall) {
+            max-width: rem(320);
+        }
+    }
+
+    &__title {
+        display: inline-flex;
+        img {
+            max-width: 100%;
+        }
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 40, 30, 1110, 767.98, 1);
+        }
+    }
+
+    &__text {
+        @include adaptiveValue("font-size", 24, 18, 1110, 479.98, 1);
+        line-height: math.div(31, 24);
+        color: $dark-2;
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 32, 22, 1110, 767.98, 1);
+        }
+    }
+
+    &__button {
+        @include adaptiveValue("margin-bottom", 0, 22, 1110, 991.98, 1);
+        @media (max-width: $mobileSmall) {
+            width: 100%;
+        }
+    }
+
+    &__image {
+        display: inline-flex;
+        justify-content: center;
+        text-align: center;
+        @include adaptiveValue("margin-bottom", -64, -24);
+        margin-right: rem(-24);
+        margin-left: rem(-24);
+        margin: 0px auto;
+        img {
+            max-width: 100%;
+        }
     }
 }

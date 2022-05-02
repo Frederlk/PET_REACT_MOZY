@@ -4,7 +4,9 @@ import { images, data } from "../constants";
 import { Brands, Heading, MainScreen, ProductCard } from "../_components";
 
 const Home = ({ className }) => {
-    const productItems = data.productItems.map((item, i) => <ProductCard key={item.titleAlt + i} data={item} />);
+    const productItems = data.productItems.map((item, i) => (
+        <ProductCard className="products__item" key={item.titleAlt + i} data={item} />
+    ));
 
     return (
         <main className={`page ${className || ""}`}>
