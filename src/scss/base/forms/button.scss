@@ -9,7 +9,7 @@
     padding: rem(5) rem(32);
     min-height: rem(52);
     background-color: $secondary-1;
-    border: rem(1) solid transparent;
+    border: rem(1) solid $secondary-1;
     border-radius: rem(6);
 
     line-height: 150%;
@@ -20,7 +20,6 @@
     @media (any-hover: hover) {
         &:hover {
             background-color: transparent;
-            border: rem(1) solid $secondary-1;
             color: $secondary-1;
         }
     }
@@ -29,5 +28,11 @@
         background-color: transparent;
         border: rem(1) solid $secondary-1;
         color: $secondary-1;
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: $secondary-1;
+                color: $white;
+            }
+        }
     }
 }
