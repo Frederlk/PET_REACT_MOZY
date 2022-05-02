@@ -1,7 +1,9 @@
-import bg from "./../assets/img/bg.jpg";
+import logo from "./../assets/img/logo.svg";
+import logoMin from "./../assets/img/logo-min.svg";
 
 const defaultImages = {
-    bg,
+    logo,
+    logoMin,
 };
 
 export default { defaultImages };
