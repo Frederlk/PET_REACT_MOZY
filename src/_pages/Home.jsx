@@ -1,8 +1,11 @@
 import React from "react";
-import { images } from "../constants";
-import MainScreen from "../_components/MainScreen";
+import { images, data } from "../constants";
+
+import { Brands, Heading, MainScreen, ProductCard } from "../_components";
 
 const Home = ({ className }) => {
+    const productItems = data.productItems.map((item, i) => <ProductCard key={item.titleAlt + i} data={item} />);
+
     return (
         <main className={`page ${className || ""}`}>
             <MainScreen
@@ -20,6 +23,17 @@ const Home = ({ className }) => {
                     </a>
                 </div>
             </MainScreen>
+            <Brands className="home__brands" />
+            <section className="home__products products">
+                <div className="products__container">
+                    <Heading
+                        className="products__heading"
+                        title="Our line of products"
+                        text="Here’s what we’re building to help businesses deliver amazing customer experiences."
+                    />
+                    <div className="products__body">{productItems.length && productItems}</div>
+                </div>
+            </section>
         </main>
     );
 };

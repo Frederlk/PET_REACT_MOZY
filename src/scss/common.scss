@@ -87,3 +87,57 @@
         }
     }
 }
+
+//========================================================================================================================================================
+
+.brands {
+    @include adaptiveValue("padding-top", 100, 40, 1110, 767.98, 1);
+    @include adaptiveValue("padding-bottom", 128, 64, 1110, 767.98, 1);
+    border-bottom: rem(1) solid rgba(197, 203, 226, 0.5);
+    &__container {
+    }
+
+    &__title {
+        color: $primary;
+        font-weight: 700;
+        @include adaptiveValue("font-size", 36, 26, 1110, 479.98, 1);
+        line-height: math.div(57, 36);
+        text-align: center;
+
+        span {
+            color: $secondary-1;
+        }
+
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 80, 30, 1110, 767.98, 1);
+        }
+    }
+
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @include adaptiveValue("gap", 40, 20, 1110, 479.98, 1);
+        @media (max-width: $pc) {
+            justify-content: space-evenly;
+        }
+    }
+
+    &__item {
+        text-align: center;
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+//========================================================================================================================================================
+
+.heading {
+    &__title {
+    }
+
+    &__text {
+    }
+}
