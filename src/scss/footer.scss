@@ -1,3 +1,149 @@
-//====================================================================================================
+.footer {
+    background-color: $dark-1;
+    &__top {
+        @include adaptiveValue("padding-top", 54, 30, 1110, 767.98, 1);
+        @include adaptiveValue("padding-bottom", 64, 34, 1110, 767.98, 1);
+    }
 
-//====================================================================================================
+    &__bottom {
+        border-top: rem(1) solid rgba(197, 203, 226, 0.5);
+        @include adaptiveValue("padding-top", 30, 20, 1110, 767.98, 1);
+        @include adaptiveValue("padding-bottom", 40, 20, 1110, 767.98, 1);
+    }
+}
+.top-footer {
+    &__container {
+        display: flex;
+        @include adaptiveValue("gap", 97, 30, 1110, 767.98, 1);
+        @media (max-width: em(700)) {
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+
+    &__info {
+        flex: 1 1 auto;
+        @media (max-width: em(700)) {
+            flex: 1 1 100%;
+        }
+    }
+
+    &__logo {
+        display: inline-flex;
+        img {
+            max-width: 100%;
+        }
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 25, 15, 767.98, 320, 1);
+        }
+    }
+
+    &__text {
+        line-height: math.div(27, 16);
+        color: $white;
+        @media (min-width: em(700)) {
+            max-width: rem(287);
+        }
+    }
+
+    &__column {
+        @media (max-width: $mobileSmall) {
+            flex: 1 1 100%;
+        }
+    }
+
+    &__label {
+        @media (max-width: $mobileSmall) {
+            font-weight: 700;
+        }
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 30, 15, 767.98, 320, 1);
+        }
+    }
+
+    &__label,
+    &__link {
+        line-height: math.div(27, 16);
+        color: $white;
+    }
+
+    &__list {
+        &_socials {
+            display: flex;
+            align-items: center;
+            gap: rem(15);
+            @media (max-width: $mobileSmall) {
+                gap: rem(20);
+            }
+        }
+    }
+
+    &__item {
+        .top-footer__list_socials & {
+            &:not(:last-child) {
+                margin-bottom: rem(0);
+            }
+        }
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 20, 5, 767.98, 320, 1);
+        }
+    }
+
+    &__link {
+        transition: all 0.3s ease 0s;
+        @media (any-hover: hover) {
+            &:hover {
+                color: $gray-2;
+            }
+        }
+    }
+
+    &__social-link {
+        svg {
+            transition: all 0.3s ease 0s;
+            fill: $white;
+        }
+        @media (any-hover: hover) {
+            &:hover {
+                svg {
+                    fill: $gray-2;
+                }
+            }
+        }
+    }
+}
+.bottom-footer {
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: rem(20);
+        color: $white;
+        @media (max-width: $mobileSmall) {
+            justify-content: center;
+            text-align: center;
+        }
+    }
+
+    &__copy {
+        line-height: math.div(20, 16);
+        @media (max-width: $mobileSmall) {
+            flex: 1 1 100%;
+        }
+    }
+
+    &__terms {
+        line-height: math.div(20, 16);
+        transition: all 0.3s ease 0s;
+        text-decoration: underline !important;
+        @media (any-hover: hover) {
+            &:hover {
+                color: $gray-2;
+            }
+        }
+        @media (max-width: $mobileSmall) {
+            flex: 1 1 100%;
+        }
+    }
+}
