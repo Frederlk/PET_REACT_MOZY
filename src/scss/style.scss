@@ -7,26 +7,35 @@
 //&display=swap - добавить при подключении через плагин
 
 // Подключить если есть локальные файлы шрифтов
-//@import "fonts/fonts";
+@import "fonts/fonts";
 
 // Подключение иконочных шрифтов ==============================================================================================================================================================================================================================================================================
 // Подключить если есть файл иконочного шрифта
 //@import "fonts/icons";
 
 // Шрифт по умолчанию ==============================================================================================================================================================================================================================================================================
-$fontFamily: "Merienda";
-$fontSize: rem(14); // где 14(px) - размер шрифта по умолчанию из макета
+$fontFamily: "Europa";
+$fontSize: rem(16); // где 14(px) - размер шрифта по умолчанию из макета
 
 // Основные цвета
-$mainColor: #000; // Цвет шрифта по умолчанию
-
+$mainColor: #484c63; // Цвет шрифта по умолчанию
+$primary: #1a2578;
+$secodary: #bf0830;
+$secondary-2: #0caa41;
+$white: #fff;
+$light: #f7f8ff;
+$light-2: #e3e7f6;
+$gray-1: #646a89;
+$gray-2: #8f90a6;
+$dark-1: #0d123c;
+$dark-2: #3a3a3c;
 // НАСТРОЙКИ ===============================================================================================================================================================================================================================================================================================
 // Минимальная ширина страницы
 $minWidth: 320;
 // Ширина полотна (макета)
-$maxWidth: 1920;
+$maxWidth: 1440;
 // Ширина ограничивающего контейнера (0 = нет ограничения)
-$maxWidthContainer: 1170;
+$maxWidthContainer: 1110;
 // Общий отступ у контейнера
 // (30 = по 15px слева и справа, 0 = нет отступа)
 $containerPadding: 30;
@@ -49,30 +58,30 @@ $responsiveType: 1;
 @import "base/null";
 
 body {
-	// Скролл заблокирован
-	.lock & {
-		overflow: hidden;
-		touch-action: none;
-	}
-	// Сайт загружен
-	.loaded & {
-	}
+    // Скролл заблокирован
+    .lock & {
+        overflow: hidden;
+        touch-action: none;
+    }
+    // Сайт загружен
+    .loaded & {
+    }
 }
 
 // Оболочка ============================================================================================================================================================================================================================================================================================================================================================================================================================================
 .wrapper {
-	min-height: 100%;
-	display: flex;
-	flex-direction: column;
-	overflow: hidden;
-	// Прижимаем footer
-	> main {
-		flex: 1 1 auto;
-	}
-	// Фикс для слайдеров
-	> * {
-		min-width: 0;
-	}
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    // Прижимаем footer
+    > main {
+        flex: 1 1 auto;
+    }
+    // Фикс для слайдеров
+    > * {
+        min-width: 0;
+    }
 }
 // Ограничивающий контейнер ======================================================================================================================================================================================================================
 
@@ -83,42 +92,42 @@ body {
 Снипет (HTML): cnt
 */
 @if ($responsiveType==1) {
-	// Отзывчивая
-	[class*="__container"] {
-		@if ($maxWidthContainer>0) {
-			max-width: rem($maxWidthContainer);
-			box-sizing: content-box;
-			margin: 0 auto;
-		}
-		@if ($containerPadding>0) {
-			padding: 0 rem(math.div($containerPadding, 2));
-		}
-	}
+    // Отзывчивая
+    [class*="__container"] {
+        @if ($maxWidthContainer>0) {
+            max-width: rem($maxWidthContainer);
+            box-sizing: content-box;
+            margin: 0 auto;
+        }
+        @if ($containerPadding>0) {
+            padding: 0 rem(math.div($containerPadding, 2));
+        }
+    }
 } @else {
-	// По брейк-поинтам
-	[class*="__container"] {
-		margin: 0 auto;
-		@if ($maxWidthContainer>0) {
-			max-width: rem($maxWidthContainer);
-			box-sizing: content-box;
-		} @else {
-			@if ($containerPadding>0) {
-				padding: 0 rem(math.div($containerPadding, 2));
-			}
-		}
-		@media (max-width: $pc) {
-			max-width: rem(970);
-		}
-		@media (max-width: $tablet) {
-			max-width: rem(750);
-		}
-		@media (max-width: $mobile) {
-			max-width: none;
-			@if ($containerPadding>0 and $maxWidthContainer>0) {
-				padding: 0 rem(math.div($containerPadding, 2));
-			}
-		}
-	}
+    // По брейк-поинтам
+    [class*="__container"] {
+        margin: 0 auto;
+        @if ($maxWidthContainer>0) {
+            max-width: rem($maxWidthContainer);
+            box-sizing: content-box;
+        } @else {
+            @if ($containerPadding>0) {
+                padding: 0 rem(math.div($containerPadding, 2));
+            }
+        }
+        @media (max-width: $pc) {
+            max-width: rem(970);
+        }
+        @media (max-width: $tablet) {
+            max-width: rem(750);
+        }
+        @media (max-width: $mobile) {
+            max-width: none;
+            @if ($containerPadding>0 and $maxWidthContainer>0) {
+                padding: 0 rem(math.div($containerPadding, 2));
+            }
+        }
+    }
 }
 
 // Подключение базовых стилей, шаблонов (заготовок) и вспомогательных  классов
