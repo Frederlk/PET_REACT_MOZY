@@ -136,6 +136,15 @@
 
 .heading {
     text-align: center;
+    &__label {
+        line-height: math.div(27, 16);
+        text-transform: uppercase;
+        color: $secondary-1;
+        &:not(:last-child) {
+            margin-bottom: rem(16);
+        }
+    }
+
     &__title {
         font-weight: 700;
         @include adaptiveValue("font-size", 44, 32, 1110, 479.98, 1);

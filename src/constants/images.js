@@ -25,6 +25,12 @@ import webtoffe1 from "./../assets/img/products/webtoffe.png";
 import webtoffe2 from "./../assets/img/products/webtoffe_2.png";
 import webtoffeLogo from "./../assets/img/products/webtoffe.svg";
 
+import award01 from "./../assets/img/awards/1.png";
+import award02 from "./../assets/img/awards/2.png";
+import award03 from "./../assets/img/awards/3.png";
+import award04 from "./../assets/img/awards/4.png";
+import awardBg from "./../assets/img/awards/bg.svg";
+
 const defaultImages = {
     logo,
     logoMin,
@@ -59,4 +65,12 @@ const productImages = {
     webtoffeLogo,
 };
 
-export default { defaultImages, mainScreenImages, brandsLogos, productImages };
+const awardsImages = {
+    award01,
+    award02,
+    award03,
+    award04,
+    awardBg,
+};
+
+export default { defaultImages, mainScreenImages, brandsLogos, productImages, awardsImages };
