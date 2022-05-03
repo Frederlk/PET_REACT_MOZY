@@ -150,7 +150,7 @@
 
     &__slider {
         &:not(:last-child) {
-            margin-bottom: rem(45);
+            @include adaptiveValue("margin-bottom", 45, 30, 1110, 767.98, 1);
         }
     }
 
@@ -167,6 +167,7 @@
         background: $white;
         box-shadow: 0px 0px rem(8) rgba(22, 23, 72, 0.07), 0px rem(25) rem(35) rgba(22, 23, 72, 0.05);
         border-radius: rem(8);
+        min-height: rem(120);
     }
 
     &__navigation {
@@ -203,3 +204,57 @@
 }
 
 //========================================================================================================================================================
+
+.lets-home {
+    @include adaptiveValue("padding-top", 110, 60, 1110, 767.98, 1);
+    @include adaptiveValue("padding-bottom", 110, 60, 1110, 767.98, 1);
+    background: linear-gradient(335.73deg, #e3e7f6 12.46%, rgba(227, 231, 246, 0) 84.19%);
+    &__container {
+        @media (min-width: $mobile) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: rem(40);
+        }
+    }
+
+    &__content {
+        @media (min-width: $mobile) {
+            flex: 0 1 rem(363);
+            padding-bottom: rem(30);
+        }
+        @media (max-width: $mobile) {
+            margin-bottom: rem(50);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__heading {
+        @media (min-width: $mobile) {
+            text-align: left;
+        }
+        &:not(:last-child) {
+            margin-bottom: rem(16);
+        }
+    }
+
+    &__button {
+        @media (max-width: $mobileSmall) {
+            width: 100%;
+        }
+    }
+
+    &__image {
+        @media (min-width: $mobile) {
+            flex: 0 1 rem(522);
+        }
+        @media (max-width: $mobile) {
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+        }
+    }
+}

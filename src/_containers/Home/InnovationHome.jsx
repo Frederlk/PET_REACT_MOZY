@@ -33,6 +33,24 @@ const InnovationHome = () => {
                         navigation={{
                             prevEl: ".innovation-home__nav-item_prev",
                             nextEl: ".innovation-home__nav-item_next",
+                        }}
+                        breakpoints={{
+                            320: {
+                                slidesPerView: 1,
+                                spaceBetween: 15,
+                            },
+                            479.98: {
+                                slidesPerView: 2,
+                                spaceBetween: 20,
+                            },
+                            767.98: {
+                                slidesPerView: 3,
+                                spaceBetween: 20,
+                            },
+                            1110: {
+                                slidesPerView: 4,
+                                spaceBetween: 30,
+                            },
                         }}>
                         {slides}
                     </Swiper>
