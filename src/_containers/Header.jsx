@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { images } from "./../constants";
 
 const Header = () => {
@@ -6,9 +7,9 @@ const Header = () => {
         <header className="header">
             <div className="header__container">
                 <div className="header__logo-wrap">
-                    <a href="#" className="header__logo">
+                    <Link to="/" className="header__logo">
                         <img src={images.defaultImages.logo} alt="Mozy Logo" />
-                    </a>
+                    </Link>
                 </div>
                 <div className="header__menu menu">
                     <nav className="menu__body">

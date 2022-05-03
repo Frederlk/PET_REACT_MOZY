@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { format } from "date-fns";
 import { images } from "./../constants";
 
@@ -8,9 +9,9 @@ const Footer = () => {
             <div className="footer__top top-footer">
                 <div className="top-footer__container">
                     <div className="top-footer__info">
-                        <a href="#" className="top-footer__logo">
+                        <Link to="/" className="top-footer__logo">
                             <img src={images.defaultImages.logoFooter} alt="Mozy Logo" />
-                        </a>
+                        </Link>
                         <div className="top-footer__text">
                             Mozil builds extensions, plugins and apps to simplify work for businesses.
                         </div>

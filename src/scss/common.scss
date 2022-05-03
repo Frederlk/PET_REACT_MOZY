@@ -227,3 +227,32 @@
 }
 
 //========================================================================================================================================================
+
+.spinner {
+    padding: rem(100) rem(15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.page404 {
+    @include adaptiveValue("padding-top", 150, 120, 1110, 767.98, 1);
+    @include adaptiveValue("padding-bottom", 120, 100, 1110, 767.98, 1);
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__heading {
+        &:not(:last-child) {
+            margin-bottom: rem(16);
+        }
+    }
+
+    &__button {
+        margin: 0px auto;
+        text-align: center;
+    }
+}
