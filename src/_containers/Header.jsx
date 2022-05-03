@@ -15,31 +15,31 @@ const Header = () => {
                     <nav className="menu__body">
                         <ul className="menu__list">
                             <li className="menu__item">
-                                <a href="" className="menu__link">
+                                <Link to="/products" className="menu__link">
                                     Products
-                                </a>
+                                </Link>
                             </li>
                             <li className="menu__item">
-                                <a href="" className="menu__link">
+                                <Link to="/about" className="menu__link">
                                     About us
-                                </a>
+                                </Link>
                             </li>
                             <li className="menu__item">
-                                <a href="" className="menu__link">
+                                <Link to="/career" className="menu__link">
                                     Career
-                                </a>
+                                </Link>
                             </li>
                             <li className="menu__item">
-                                <a href="" className="menu__link">
+                                <Link to="/contact" className="menu__link">
                                     Contact
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </nav>
                 </div>
-                <a data-da=".menu__body, 479.98, 1" href="#" className="header__hiring button">
+                <Link to="/hiring" data-da=".menu__body, 479.98, 1" className="header__hiring button">
                     We’re hiring
-                </a>
+                </Link>
                 <button type="button" className="header__icon icon-menu">
                     <span></span>
                 </button>

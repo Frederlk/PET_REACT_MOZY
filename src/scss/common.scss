@@ -5,7 +5,7 @@
     }
 
     &__wrapper {
-        @include adaptiveValue("padding-top", 120, 100, 1110, 767.98, 1);
+        padding-top: rem(120);
         @media (min-width: $mobile) {
             display: flex;
             align-items: flex-end;
@@ -30,6 +30,9 @@
             @include adaptiveValue("margin-top", 100, 0, 1440, 767.98, 1);
             flex: 0 0 rem(480);
         }
+        @media (max-width: $mobile) {
+            text-align: center;
+        }
     }
 
     &__title {
@@ -48,6 +51,9 @@
         @include adaptiveValue("max-width", 512, 340, 1110, 767.98, 1);
         &:not(:last-child) {
             @include adaptiveValue("margin-bottom", 40, 20, 1110, 767.98, 1);
+        }
+        @media (max-width: $mobile) {
+            margin: 0px auto;
         }
     }
 
@@ -78,6 +84,7 @@
         gap: rem(16);
         @media (max-width: $mobile) {
             flex-wrap: wrap;
+            justify-content: center;
         }
     }
 

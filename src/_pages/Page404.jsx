@@ -11,14 +11,14 @@ const Page404 = () => {
                 <title>Error 404</title>
             </Helmet>
 
-            <main className="page404">
+            <section className="page404">
                 <div className="page404__container">
                     <Heading className="page404__heading" title="Error 404" label="Are you lost?" />
                     <Link to="/" className="page404__button button button_outline">
                         To Homepage
                     </Link>
                 </div>
-            </main>
+            </section>
         </>
     );
 };

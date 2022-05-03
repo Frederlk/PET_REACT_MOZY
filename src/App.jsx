@@ -7,7 +7,8 @@ import { Header, Footer } from "./_containers";
 import { Spinner } from "./_components";
 
 const Page404 = lazy(() => import("./_pages/Page404")),
-    Home = lazy(() => import("./_pages/Home"));
+    Home = lazy(() => import("./_pages/Home")),
+    Products = lazy(() => import("./_pages/Products"));
 
 const ScrollToTop = () => {
     const { pathname } = useLocation();
@@ -28,12 +29,15 @@ const App = () => {
         <Router>
             <ScrollToTop />
             <Header />
-            <Suspense fallback={<Spinner />}>
-                <Routes>
-                    <Route path="/" element={<Home className="page_home" />} />
-                    <Route path="*" element={<Page404 />} />
-                </Routes>
-            </Suspense>
+            <main className="page">
+                <Suspense fallback={<Spinner />}>
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/products" element={<Products />} />
+                        <Route path="*" element={<Page404 />} />
+                    </Routes>
+                </Suspense>
+            </main>
             <Footer />
         </Router>
     );
