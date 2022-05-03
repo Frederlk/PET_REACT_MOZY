@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { images } from "../constants";
 
 import { MainScreen } from "../_components";
+import { ProductsBlock } from "../_containers";
 
 const Products = () => {
     return (
@@ -22,6 +23,7 @@ const Products = () => {
                         extensions and offer productive experiences for teams and customers alike."
                 imgSrc={images.mainScreenImages.mainProducts}
                 imgAlt="Products"></MainScreen>
+            <ProductsBlock />
         </>
     );
 };
