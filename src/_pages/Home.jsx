@@ -2,7 +2,7 @@ import React from "react";
 import { images } from "../constants";
 
 import { Brands, MainScreen } from "../_components";
-import { AwardsHome, ProductsHome } from "../_containers";
+import { AwardsHome, InnovationHome, ProductsHome } from "../_containers";
 
 const Home = ({ className }) => {
     return (
@@ -25,6 +25,7 @@ const Home = ({ className }) => {
             <Brands className="home__brands" />
             <ProductsHome />
             <AwardsHome />
+            <InnovationHome />
         </main>
     );
 };

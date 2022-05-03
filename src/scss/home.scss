@@ -135,3 +135,71 @@
 }
 
 //========================================================================================================================================================
+
+.innovation-home {
+    @include adaptiveValue("padding-top", 100, 50, 1110, 767.98, 1);
+    padding-bottom: rem(30);
+    &__container {
+    }
+
+    &__heading {
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 90, 50, 1110, 767.98, 1);
+        }
+    }
+
+    &__slider {
+        &:not(:last-child) {
+            margin-bottom: rem(45);
+        }
+    }
+
+    &__swiper {
+        margin-top: rem(-25);
+        padding: rem(25) 0px rem(45) 0px;
+    }
+
+    &__slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: $white;
+        box-shadow: 0px 0px rem(8) rgba(22, 23, 72, 0.07), 0px rem(25) rem(35) rgba(22, 23, 72, 0.05);
+        border-radius: rem(8);
+    }
+
+    &__navigation {
+        display: flex;
+        align-items: center;
+        gap: rem(8);
+    }
+
+    &__nav-item {
+        flex: 0 0 rem(24);
+        height: rem(24);
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        svg {
+            transition: all 0.3s ease 0s;
+        }
+        @media (any-hover: hover) {
+            &:hover {
+                svg {
+                    fill: $dark-2;
+                }
+            }
+        }
+
+        &_prev {
+            transform: rotate(-180deg);
+        }
+
+        &_next {
+        }
+    }
+}
+
+//========================================================================================================================================================

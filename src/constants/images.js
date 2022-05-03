@@ -31,6 +31,11 @@ import award03 from "./../assets/img/awards/3.png";
 import award04 from "./../assets/img/awards/4.png";
 import awardBg from "./../assets/img/awards/bg.svg";
 
+import innovation01 from "./../assets/img/leaders/start.png";
+import innovation02 from "./../assets/img/leaders/wiki.png";
+import innovation03 from "./../assets/img/leaders/smashing.png";
+import innovation04 from "./../assets/img/leaders/css.png";
+
 const defaultImages = {
     logo,
     logoMin,
@@ -73,4 +78,11 @@ const awardsImages = {
     awardBg,
 };
 
-export default { defaultImages, mainScreenImages, brandsLogos, productImages, awardsImages };
+const innovationImages = {
+    innovation01,
+    innovation02,
+    innovation03,
+    innovation04,
+};
+
+export default { defaultImages, mainScreenImages, brandsLogos, productImages, awardsImages, innovationImages };

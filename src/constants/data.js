@@ -52,4 +52,31 @@ const productItems = [
     },
 ];
 
-export default { brandsItems, productItems };
+const { innovationImages } = images;
+const innpvationItems = [
+    {
+        img: innovationImages.innovation01,
+        alt: "10000 Start-Ups",
+    },
+    {
+        img: innovationImages.innovation02,
+        alt: "Wikipedia",
+    },
+    {
+        img: innovationImages.innovation03,
+        alt: "Smashing",
+    },
+    {
+        img: innovationImages.innovation04,
+        alt: "css",
+    },
+    {
+        img: innovationImages.innovation01,
+        alt: "10000 Start-Ups",
+    },
+    {
+        img: innovationImages.innovation02,
+        alt: "Wikipedia",
+    },
+];
+export default { brandsItems, productItems, innpvationItems };
