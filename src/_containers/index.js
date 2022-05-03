@@ -7,3 +7,4 @@ export { default as InnovationHome } from "./Home/InnovationHome";
 export { default as LetsHome } from "./Home/LetsHome";
 
 export { default as ProductsBlock } from "./Products/ProductsBlock";
+export { default as WantToBuild } from "./Products/WantToBuild";

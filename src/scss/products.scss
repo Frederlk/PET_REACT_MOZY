@@ -12,6 +12,8 @@
     }
     &__products {
     }
+    &__want {
+    }
 }
 
 //========================================================================================================================================================
@@ -92,3 +94,35 @@
 }
 
 //========================================================================================================================================================
+
+.want-products {
+    @include adaptiveValue("padding-top", 110, 60, 1110, 767.98, 1);
+    @include adaptiveValue("padding-bottom", 110, 60, 1110, 767.98, 1);
+    background: linear-gradient(342.12deg, #e3e7f6 -6.53%, rgba(227, 231, 246, 0) 87.81%);
+    &__container {
+    }
+
+    &__heading {
+        max-width: rem(650);
+        margin: 0px auto;
+        &:not(:last-child) {
+            margin-bottom: rem(40);
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: rem(20);
+        @media (max-width: $mobileSmall) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__button {
+        @media (max-width: $mobileSmall) {
+            flex: 1 1 100%;
+        }
+    }
+}
