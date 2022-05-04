@@ -106,5 +106,88 @@ const infoAboutItems = [
         image: infoAboutImages.infoAbout03,
     },
 ];
+const aboutBlockItems = [
+    {
+        title: "Who we are",
+        description: `<p>We are a bunch of thinkers and dreamers, who have come together to build products we are proud of. We come from diverse backgrounds, work in different agile teams and come together to deliver the best technology.</p>
+        <p>In 2017, we started as a one-person endeavour by Anvar TK, our CEO, in an incubator at National Institute of Technology Calicut.  Today, we are a growing team of 40+ members with offices in London, Bangalore and Calicut.</p>`,
+        img: infoAboutImages.infoAbout04,
+    },
+    {
+        title: "What we do",
+        description: `<p>We build meaningful products that help people to simplify work, are scalable and can stand the test of time. We strive to deliver solutions that can transform how businesses work so that they can focus on what matters the most.</p>
+        <p>At Mozilor, we see each day as a new opportunity to ideate, explore, take risks and learn.  And that’s what has helped us grow and be the leaders across industries.</p>`,
+        img: infoAboutImages.infoAbout05,
+    },
+];
 
-export default { brandsItems, productItems, innpvationItems, infoAboutItems };
+const cultereCodeItems = [
+    {
+        title: "Integrity",
+        text: "We value people who live by a strong moral code and act with uncompromising honesty in everything they do.",
+    },
+    {
+        title: "Accountability",
+        text: "We take ownership of everything we do, including our mistakes. We learn from them so that we can make better mistakes next time.",
+    },
+    {
+        title: "Humility",
+        text: "We value curiosity to learn from anyone, anywhere and the openness to acknowledge differences.",
+    },
+    {
+        title: "Autonomy",
+        text: "We insist on individuality and care for the goals we achieve, not the procedures or ceremony in getting there. ",
+    },
+    {
+        title: "Conscientiousness",
+        text: "We seek to be principled and reliable so that we can always provide value for everyone around us.",
+    },
+    {
+        title: "Contribution",
+        text: "We actively look for opportunities to give back to our team and the world around us.",
+    },
+];
+
+const { bestOfferImages } = images;
+const bestOffer = [
+    {
+        title: "Flexiblility",
+        image: bestOfferImages.bestOffer01,
+        text: "Be it in-office, WFH or a mix of both, do your best work from wherever you want, because we have a hybrid and flexible work culture.",
+    },
+    {
+        title: "Learning",
+        image: bestOfferImages.bestOffer02,
+        text: "We offer plenty of learning opportunities such as professional courses, guided learning and workshops to pick up new skills.",
+    },
+    {
+        title: "Wellbeing",
+        image: bestOfferImages.bestOffer03,
+        text: "We’ve got your wellbeing covered with medical insurance for employees and dependents, employee loans and paid parental leaves.",
+    },
+    {
+        title: "Perks",
+        image: bestOfferImages.bestOffer04,
+        text: "We provide great tech like Macbooks and work essentials. To top it, we have yearly company-wide retreats at the best locations!",
+    },
+    {
+        title: "Growth",
+        image: bestOfferImages.bestOffer05,
+        text: "Get the freedom to run your ideas, take up new job roles and collaborate across teams and chart your career.",
+    },
+    {
+        title: "Network",
+        image: bestOfferImages.bestOffer06,
+        text: "Build your network and rub shoulders with top teams from the biggest brands and startups in the world.",
+    },
+];
+
+export default {
+    brandsItems,
+    productItems,
+    innpvationItems,
+    infoAboutItems,
+    cultereCodeItems,
+    bestOffer,
+    aboutBlockItems,
+};

@@ -19,6 +19,8 @@
 
     &__info {
     }
+    &__what {
+    }
 }
 
 //========================================================================================================================================================
@@ -74,6 +76,42 @@
 
         img {
             max-width: 100%;
+        }
+    }
+}
+
+//========================================================================================================================================================
+
+.cultere {
+    padding-top: rem(40);
+    @include adaptiveValue("padding-bottom", 80, 60, 1110, 767.98, 1);
+    background: linear-gradient(268.52deg, #e3e7f6 -52.27%, rgba(227, 231, 246, 0) 138.23%);
+    &__container {
+    }
+
+    &__heading {
+        @include adaptiveValue("margin-bottom", 75, 40, 1110, 767.98, 1);
+    }
+
+    &__body {
+        @include adaptiveValue("margin-bottom", 100, 50, 1110, 767.98, 1);
+    }
+}
+
+//========================================================================================================================================================
+
+.what-about {
+    @include adaptiveValue("padding-top", 100, 50, 1110, 767.98, 1);
+    @include adaptiveValue("padding-bottom", 120, 60, 1110, 767.98, 1);
+    &__container {
+    }
+
+    &__about {
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: rem(60);
+        .about-block__content {
+            padding-top: 0;
         }
     }
 }

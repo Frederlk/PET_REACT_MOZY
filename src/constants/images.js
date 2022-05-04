@@ -39,6 +39,16 @@ import innovation04 from "./../assets/img/leaders/css.png";
 import infoAbout01 from "./../assets/img/hiring/founded.svg";
 import infoAbout02 from "./../assets/img/hiring/employees.svg";
 import infoAbout03 from "./../assets/img/hiring/users.svg";
+import infoAbout04 from "./../assets/img/hiring/1.jpg";
+import infoAbout05 from "./../assets/img/hiring/2.jpg";
+import infoAbout06 from "./../assets/img/hiring/hiring.svg";
+
+import bestOffer01 from "./../assets/img/best/flexibility.svg";
+import bestOffer02 from "./../assets/img/best/learning.svg";
+import bestOffer03 from "./../assets/img/best/insurance.svg";
+import bestOffer04 from "./../assets/img/best/laptop.svg";
+import bestOffer05 from "./../assets/img/best/growth.svg";
+import bestOffer06 from "./../assets/img/best/network.svg";
 
 const defaultImages = {
     logo,
@@ -93,6 +103,27 @@ const infoAboutImages = {
     infoAbout01,
     infoAbout02,
     infoAbout03,
+    infoAbout04,
+    infoAbout05,
+    infoAbout06,
 };
 
-export default { defaultImages, mainScreenImages, brandsLogos, productImages, awardsImages, innovationImages, infoAboutImages };
+const bestOfferImages = {
+    bestOffer01,
+    bestOffer02,
+    bestOffer03,
+    bestOffer04,
+    bestOffer05,
+    bestOffer06,
+};
+
+export default {
+    defaultImages,
+    mainScreenImages,
+    brandsLogos,
+    productImages,
+    awardsImages,
+    innovationImages,
+    infoAboutImages,
+    bestOfferImages,
+};

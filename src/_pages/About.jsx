@@ -1,9 +1,9 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
-import { images } from "../constants";
-import { Brands, MainScreen } from "../_components";
-import { InfoAbout } from "../_containers";
+import { images, data } from "../constants";
+import { AboutBlock, Brands, MainScreen } from "../_components";
+import { CultereCode, InfoAbout } from "../_containers";
 
 const About = () => {
     return (
@@ -22,6 +22,12 @@ const About = () => {
             />
             <Brands className="about-page__brands" />
             <InfoAbout className="about-page__info" />
+            <CultereCode />
+            <section className="about-page__what what-about">
+                <div className="what-about__container">
+                    <AboutBlock className="what-about__about" data={data.aboutBlockItems[1]} />
+                </div>
+            </section>
         </>
     );
 };
