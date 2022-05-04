@@ -1,0 +1,15 @@
+.about-page {
+    &__main-screen {
+        .main-screen__content {
+            flex: 0 0 percent(370, 1110);
+        }
+        .main-screen__image {
+            padding-bottom: rem(20);
+            @media (min-width: $mobile) {
+                padding-top: rem(60);
+                margin: 0 rem(-40);
+                flex: 0 0 percent(640, 1110);
+            }
+        }
+    }
+}

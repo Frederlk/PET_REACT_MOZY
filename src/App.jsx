@@ -8,6 +8,7 @@ import { Spinner } from "./_components";
 
 const Page404 = lazy(() => import("./_pages/Page404")),
     Home = lazy(() => import("./_pages/Home")),
+    About = lazy(() => import("./_pages/About")),
     Products = lazy(() => import("./_pages/Products"));
 
 const ScrollToTop = () => {
@@ -34,6 +35,7 @@ const App = () => {
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/products" element={<Products />} />
+                        <Route path="/about" element={<About />} />
                         <Route path="*" element={<Page404 />} />
                     </Routes>
                 </Suspense>
