@@ -12,4 +12,68 @@
             }
         }
     }
+
+    &__brands {
+        border: none;
+    }
+
+    &__info {
+    }
+}
+
+//========================================================================================================================================================
+
+.info-about {
+    padding-top: rem(20);
+    @include adaptiveValue("padding-bottom", 80, 60, 1110, 767.98, 1);
+    &__container {
+        display: grid;
+        gap: rem(32);
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(rem(250), 1fr));
+
+        @media (min-width: $pc) {
+            grid-template-columns: repeat(auto-fit, minmax(rem(250), rem(316)));
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: $white;
+        box-shadow: 0px 0px rem(8) rgba(22, 23, 72, 0.07), 0px rem(25) rem(35) rgba(22, 23, 72, 0.05);
+        border-radius: rem(8);
+        @include adaptiveValue("padding", 50, 30, 1110, 767.98, 1);
+    }
+
+    &__title {
+        font-weight: 700;
+        @include adaptiveValue("font-size", 56, 42, 1110, 767.98, 1);
+        line-height: math.div(62, 56);
+        color: $primary;
+        &:not(:last-child) {
+            margin-bottom: rem(18);
+        }
+    }
+
+    &__text {
+        font-size: rem(22);
+        line-height: math.div(33, 22);
+        flex: 1 1 auto;
+        &:not(:last-child) {
+            margin-bottom: rem(12);
+        }
+    }
+
+    &__img {
+        @include adaptiveValue("margin-bottom", -50, -30, 1110, 767.98, 1);
+        @include adaptiveValue("margin-right", -50, -30, 1110, 767.98, 1);
+        @include adaptiveValue("margin-left", -50, -30, 1110, 767.98, 1);
+
+        img {
+            max-width: 100%;
+        }
+    }
 }

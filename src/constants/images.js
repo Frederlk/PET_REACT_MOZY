@@ -36,6 +36,10 @@ import innovation02 from "./../assets/img/leaders/wiki.png";
 import innovation03 from "./../assets/img/leaders/smashing.png";
 import innovation04 from "./../assets/img/leaders/css.png";
 
+import infoAbout01 from "./../assets/img/hiring/founded.svg";
+import infoAbout02 from "./../assets/img/hiring/employees.svg";
+import infoAbout03 from "./../assets/img/hiring/users.svg";
+
 const defaultImages = {
     logo,
     logoMin,
@@ -85,4 +89,10 @@ const innovationImages = {
     innovation04,
 };
 
-export default { defaultImages, mainScreenImages, brandsLogos, productImages, awardsImages, innovationImages };
+const infoAboutImages = {
+    infoAbout01,
+    infoAbout02,
+    infoAbout03,
+};
+
+export default { defaultImages, mainScreenImages, brandsLogos, productImages, awardsImages, innovationImages, infoAboutImages };

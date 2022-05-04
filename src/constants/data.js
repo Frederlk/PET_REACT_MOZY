@@ -87,4 +87,24 @@ const innpvationItems = [
         alt: "Wikipedia",
     },
 ];
-export default { brandsItems, productItems, innpvationItems };
+
+const { infoAboutImages } = images;
+const infoAboutItems = [
+    {
+        title: "2017",
+        text: "Founded in",
+        image: infoAboutImages.infoAbout01,
+    },
+    {
+        title: "44+",
+        text: "Employees",
+        image: infoAboutImages.infoAbout02,
+    },
+    {
+        title: "1.3M+",
+        text: "Active users",
+        image: infoAboutImages.infoAbout03,
+    },
+];
+
+export default { brandsItems, productItems, innpvationItems, infoAboutItems };

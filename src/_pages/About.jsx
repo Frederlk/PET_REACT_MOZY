@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { images } from "../constants";
 import { Brands, MainScreen } from "../_components";
+import { InfoAbout } from "../_containers";
 
 const About = () => {
     return (
@@ -20,6 +21,7 @@ const About = () => {
                 imgAlt="About"
             />
             <Brands className="about-page__brands" />
+            <InfoAbout className="about-page__info" />
         </>
     );
 };
