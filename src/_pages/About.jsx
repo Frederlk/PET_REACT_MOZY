@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { images, data } from "../constants";
 import { AboutBlock, Brands, MainScreen } from "../_components";
 import { CultereCode, InfoAbout } from "../_containers";
+import WeAreHiring from "../_containers/About/WeAreHiring";
 
 const About = () => {
     return (
@@ -28,6 +29,7 @@ const About = () => {
                     <AboutBlock className="what-about__about" data={data.aboutBlockItems[1]} />
                 </div>
             </section>
+            <WeAreHiring className="about-page__hiring" />
         </>
     );
 };

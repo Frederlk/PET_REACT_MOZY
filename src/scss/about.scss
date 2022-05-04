@@ -109,9 +109,86 @@
     &__about {
         flex-direction: row-reverse;
         align-items: center;
-        gap: rem(60);
         .about-block__content {
             padding-top: 0;
+        }
+    }
+}
+
+//========================================================================================================================================================
+
+.are-hiring {
+    background: linear-gradient(268.52deg, #e3e7f6 -52.27%, rgba(227, 231, 246, 0) 138.23%);
+    @include adaptiveValue("padding-top", 150, 70, 1110, 767.98, 1);
+    @include adaptiveValue("padding-bottom", 150, 70, 1110, 767.98, 1);
+    &__container {
+        @media (min-width: $mobile) {
+            display: flex;
+            gap: rem(40);
+            justify-content: space-between;
+        }
+    }
+
+    &__content {
+        @media (min-width: $pc) {
+            padding-left: rem(86);
+        }
+        @media (min-width: $mobile) {
+            flex: 0 0 percent(416, 1110);
+        }
+        @media (max-width: $mobile) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &:not(:last-child) {
+                margin-bottom: rem(40);
+            }
+        }
+    }
+
+    &__heading {
+        @media (min-width: $mobile) {
+            text-align: left;
+            .heading__text {
+                max-width: rem(334);
+            }
+        }
+
+        &:not(:last-child) {
+            margin-bottom: rem(40);
+        }
+    }
+
+    &__button {
+        @media (max-width: $mobileSmall) {
+            width: 100%;
+        }
+    }
+
+    &__label {
+        margin-top: rem(14);
+        margin-left: rem(66);
+        @media (max-width: $mobile) {
+            margin-left: rem(200);
+        }
+        @media (max-width: $mobileSmall) {
+            text-align: right;
+            margin: rem(14) 0 0 auto;
+        }
+        img {
+            max-width: 100%;
+        }
+    }
+
+    &__image {
+        @media (min-width: $mobile) {
+            flex: 0 1 percent(591, 1110);
+        }
+        @media (max-width: $mobile) {
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
         }
     }
 }

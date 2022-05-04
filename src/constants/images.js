@@ -1,6 +1,7 @@
 import logo from "./../assets/img/logo.svg";
 import logoMin from "./../assets/img/logo_min.svg";
 import logoFooter from "./../assets/img/logo_footer.svg";
+import beTheNext from "./../assets/img/icons/beTheNext.svg";
 
 import mainHome from "./../assets/img/main/home.svg";
 import mainAbout from "./../assets/img/main/about.svg";
@@ -54,6 +55,7 @@ const defaultImages = {
     logo,
     logoMin,
     logoFooter,
+    beTheNext,
 };
 
 const mainScreenImages = {
