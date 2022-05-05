@@ -22,7 +22,7 @@
     }
 
     &__content {
-        @include adaptiveValue("margin-bottom", 210, 40, 1440, 767.98, 1);
+        @include adaptiveValue("margin-bottom", 210, 80, 1440, 767.98, 1);
         @media (max-width: $tablet) {
             flex: 0 1 55%;
         }
@@ -31,6 +31,7 @@
             flex: 0 0 rem(480);
         }
         @media (max-width: $mobile) {
+            margin-bottom: rem(40);
             text-align: center;
         }
     }
@@ -42,6 +43,16 @@
         color: $primary;
         &:not(:last-child) {
             @include adaptiveValue("margin-bottom", 32, 16, 1110, 767.98, 1);
+        }
+    }
+
+    &__selected {
+        font-weight: 700;
+        @include adaptiveValue("font-size", 48, 32, 1110, 479.98, 1);
+        line-height: math.div(62, 48);
+        color: $secondary-1;
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 40, 20, 1110, 767.98, 1);
         }
     }
 

@@ -7,7 +7,7 @@ const MainScreen = ({ className, title, text, children, imgSrc, imgAlt }) => {
                 <div className="main-screen__wrapper">
                     <div className="main-screen__content">
                         <h1 className="main-screen__title">{title}</h1>
-                        <p className="main-screen__text">{text}</p>
+                        {text && <p className="main-screen__text">{text}</p>}
                         {children && children}
                     </div>
                     <div className="main-screen__image">

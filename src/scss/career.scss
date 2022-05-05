@@ -1,0 +1,38 @@
+.career-page {
+    &__main-screen {
+        .main-screen__wrapper {
+            padding-top: rem(150);
+        }
+        .main-screen__content {
+            flex: 0 0 percent(590, 1110);
+        }
+        .main-screen__image {
+            @media (min-width: $mobile) {
+                flex: 0 0 percent(650, 1110);
+            }
+        }
+        .main-screen__title {
+            &:not(:last-child) {
+                margin-bottom: rem(10) !important;
+            }
+        }
+    }
+    &__offer {
+    }
+}
+
+.offer-career {
+    @include adaptiveValue("padding-top", 128, 70, 1110, 767.98, 1);
+    padding-bottom: rem(40);
+    &__container {
+    }
+
+    &__heading {
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 100, 50, 1110, 767.98, 1);
+        }
+    }
+
+    &__body {
+    }
+}

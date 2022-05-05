@@ -20,14 +20,14 @@ const Footer = () => {
                         <h5 className="top-footer__label">Products</h5>
                         <ul className="top-footer__list">
                             <li className="top-footer__item">
-                                <a href="#" className="top-footer__link">
+                                <Link to="/products" className="top-footer__link">
                                     CookieYes
-                                </a>
+                                </Link>
                             </li>
                             <li className="top-footer__item">
-                                <a href="#" className="top-footer__link">
+                                <Link to="/products" className="top-footer__link">
                                     Webtoffee
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </nav>
@@ -35,24 +35,19 @@ const Footer = () => {
                         <h5 className="top-footer__label">About</h5>
                         <ul className="top-footer__list">
                             <li className="top-footer__item">
-                                <a href="#" className="top-footer__link">
+                                <Link to="/about" className="top-footer__link">
                                     About us
-                                </a>
+                                </Link>
                             </li>
                             <li className="top-footer__item">
-                                <a href="#" className="top-footer__link">
+                                <Link to="/career" className="top-footer__link">
                                     Career
-                                </a>
+                                </Link>
                             </li>
                             <li className="top-footer__item">
-                                <a href="#" className="top-footer__link">
+                                <Link to="/contacts" className="top-footer__link">
                                     Contact
-                                </a>
-                            </li>
-                            <li className="top-footer__item">
-                                <a href="#" className="top-footer__link">
-                                    We’re hiring
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </nav>

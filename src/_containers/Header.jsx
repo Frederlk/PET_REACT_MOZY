@@ -25,11 +25,6 @@ const Header = () => {
                                 </Link>
                             </li>
                             <li className="menu__item">
-                                <Link to="/career" className="menu__link">
-                                    Career
-                                </Link>
-                            </li>
-                            <li className="menu__item">
                                 <Link to="/contact" className="menu__link">
                                     Contact
                                 </Link>
@@ -37,7 +32,7 @@ const Header = () => {
                         </ul>
                     </nav>
                 </div>
-                <Link to="/hiring" data-da=".menu__body, 479.98, 1" className="header__hiring button">
+                <Link to="/career" data-da=".menu__body, 479.98, 1" className="header__hiring button">
                     We’re hiring
                 </Link>
                 <button type="button" className="header__icon icon-menu">
