@@ -11,3 +11,5 @@ export { default as WantToBuild } from "./Products/WantToBuild";
 
 export { default as InfoAbout } from "./About/InfoAbout";
 export { default as CultereCode } from "./About/CultereCode";
+
+export { default as LifeMozy } from "./Career/LifeMozy";

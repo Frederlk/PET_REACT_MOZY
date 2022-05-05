@@ -51,6 +51,12 @@ import bestOffer04 from "./../assets/img/best/laptop.svg";
 import bestOffer05 from "./../assets/img/best/growth.svg";
 import bestOffer06 from "./../assets/img/best/network.svg";
 
+import life01 from "./../assets/img/life/1.jpg";
+import life02 from "./../assets/img/life/2.jpg";
+import life03 from "./../assets/img/life/3.jpg";
+import life04 from "./../assets/img/life/4.jpg";
+import life05 from "./../assets/img/life/5.jpg";
+
 const defaultImages = {
     logo,
     logoMin,
@@ -119,6 +125,14 @@ const bestOfferImages = {
     bestOffer06,
 };
 
+const lifeImages = {
+    life01,
+    life02,
+    life03,
+    life04,
+    life05,
+};
+
 export default {
     defaultImages,
     mainScreenImages,
@@ -128,4 +142,5 @@ export default {
     innovationImages,
     infoAboutImages,
     bestOfferImages,
+    lifeImages,
 };

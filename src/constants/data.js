@@ -106,6 +106,7 @@ const infoAboutItems = [
         image: infoAboutImages.infoAbout03,
     },
 ];
+
 const aboutBlockItems = [
     {
         title: "Who we are",
@@ -182,6 +183,30 @@ const bestOffer = [
     },
 ];
 
+const { lifeImages } = images;
+const lifeItems = [
+    {
+        img: lifeImages.life01,
+        alt: "happy team 01",
+    },
+    {
+        img: lifeImages.life02,
+        alt: "happy team 02",
+    },
+    {
+        img: lifeImages.life03,
+        alt: "happy team 03",
+    },
+    {
+        img: lifeImages.life04,
+        alt: "happy team 04",
+    },
+    {
+        img: lifeImages.life05,
+        alt: "happy team 05",
+    },
+];
+
 export default {
     brandsItems,
     productItems,
@@ -190,4 +215,5 @@ export default {
     cultereCodeItems,
     bestOffer,
     aboutBlockItems,
+    lifeItems,
 };

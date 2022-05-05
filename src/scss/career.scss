@@ -36,3 +36,80 @@
     &__body {
     }
 }
+
+//========================================================================================================================================================
+
+.life {
+    background: linear-gradient(270.76deg, #e3e7f6 -55.5%, rgba(227, 231, 246, 0) 145.36%);
+    padding: rem(60) 0;
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        @include adaptiveValue("grid-auto-rows", 370, 300, 1110, 767.98, 1);
+        gap: rem(50) rem(30);
+        @media (max-width: $tablet) {
+            gap: rem(40) rem(20);
+        }
+        @media (max-width: em(650)) {
+            gap: rem(30);
+            grid-template-columns: 1fr;
+            grid-auto-rows: 1fr;
+        }
+    }
+
+    &__item {
+        @media (min-width: em(650)) {
+            &:not(:last-child) {
+                &:nth-child(4n + 4) {
+                    margin: 0 0 rem(-50) 0;
+                }
+            }
+            &:nth-child(4n + 6) {
+                margin: rem(50) 0 0 0;
+            }
+        }
+        &_1 {
+            align-self: center;
+            @media (min-width: $mobile) {
+                max-width: rem(320);
+            }
+        }
+        &_2 {
+        }
+        &_3 {
+        }
+        &_4 {
+        }
+        &_5 {
+        }
+        &_6 {
+        }
+    }
+
+    &__title {
+        @include adaptiveValue("font-size", 44, 38, 1110, 767.98, 1);
+        line-height: math.div(62, 44);
+        color: $primary;
+        @media (min-width: $mobile) {
+            span {
+                display: block;
+            }
+        }
+        &:not(:last-child) {
+            margin-bottom: rem(16);
+        }
+    }
+
+    &__text {
+        line-height: math.div(27, 16);
+    }
+
+    &__image-ibg {
+        overflow: hidden;
+        border-radius: rem(11);
+        height: 100%;
+        @media (max-width: em(650)) {
+            @include adaptiveValue("min-height", 350, 250, 650, 320, 1);
+        }
+    }
+}
