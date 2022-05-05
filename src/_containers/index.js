@@ -14,3 +14,5 @@ export { default as CultereCode } from "./About/CultereCode";
 
 export { default as LifeMozy } from "./Career/LifeMozy";
 export { default as Join } from "./Career/Join";
+export { default as OfferCareer } from "./Career/OfferCareer";
+export { default as WriteToUs } from "./Career/WriteToUs";

@@ -22,10 +22,10 @@ const Home = () => {
                 imgSrc={images.mainScreenImages.mainHome}
                 imgAlt="Home">
                 <div className="main-screen__buttons">
-                    <Link to="#" className="main-screen__button button">
+                    <Link to="/about" className="main-screen__button button">
                         Learn more
                     </Link>
-                    <Link to="#" className="main-screen__button button button_outline">
+                    <Link to="/career" className="main-screen__button button button_outline">
                         Work with us
                     </Link>
                 </div>

@@ -277,7 +277,6 @@
         }
     }
 }
-
 .jobs-join {
     &__item {
         background-color: $white;
@@ -367,6 +366,34 @@
         flex: 0 0 rem(155);
         @media (max-width: $mobileSmall) {
             flex: 1 1 100%;
+        }
+    }
+}
+
+//========================================================================================================================================================
+
+.write-to-us {
+    padding: rem(80) 0;
+    background: linear-gradient(342.12deg, #e3e7f6 -6.53%, rgba(227, 231, 246, 0) 87.81%);
+    @media (max-width: $mobile) {
+        padding: rem(60) 0;
+    }
+    &__container {
+    }
+
+    &__heading {
+        &:not(:last-child) {
+            margin-bottom: rem(40);
+        }
+    }
+
+    &__button-wrap {
+        text-align: center;
+    }
+
+    &__button {
+        @media (max-width: $mobileSmall) {
+            width: 100%;
         }
     }
 }

@@ -4,8 +4,7 @@ import { Link } from "react-router-dom";
 import { images } from "../constants";
 
 import { MainScreen } from "../_components";
-import { Join, LifeMozy } from "../_containers";
-import OfferCareer from "../_containers/Career/OfferCareer";
+import { Join, LifeMozy, OfferCareer, WriteToUs } from "../_containers";
 
 const Career = () => {
     return (
@@ -29,7 +28,8 @@ const Career = () => {
             </MainScreen>
             <OfferCareer className="career-page__offer" />
             <LifeMozy className="career-page__life" />
-            <Join />
+            <Join className="career-page__join" />
+            <WriteToUs className="career-page__write" />
         </>
     );
 };
