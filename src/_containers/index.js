@@ -13,3 +13,4 @@ export { default as InfoAbout } from "./About/InfoAbout";
 export { default as CultereCode } from "./About/CultereCode";
 
 export { default as LifeMozy } from "./Career/LifeMozy";
+export { default as Join } from "./Career/Join";

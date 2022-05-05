@@ -207,6 +207,39 @@ const lifeItems = [
     },
 ];
 
+const jobsItems = [
+    {
+        title: "Front-end Developer",
+        time: "Full time",
+        place: "India",
+        link: "#Front-end",
+    },
+    {
+        title: "PHP Developers (Laravel)",
+        time: "Full time",
+        place: "India",
+        link: "#Front-end",
+    },
+    {
+        title: "Junior Software Developer",
+        time: "Full time",
+        place: "India",
+        link: "#Front-end",
+    },
+    {
+        title: "WordPress Developer + Designer",
+        time: "Full time",
+        place: "India",
+        link: "#Front-end",
+    },
+    {
+        title: "Node.js Developer",
+        time: "Full time",
+        place: "India",
+        link: "#Front-end",
+    },
+];
+
 export default {
     brandsItems,
     productItems,
@@ -216,4 +249,5 @@ export default {
     bestOffer,
     aboutBlockItems,
     lifeItems,
+    jobsItems,
 };

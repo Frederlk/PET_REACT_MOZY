@@ -2,6 +2,10 @@ import logo from "./../assets/img/logo.svg";
 import logoMin from "./../assets/img/logo_min.svg";
 import logoFooter from "./../assets/img/logo_footer.svg";
 import beTheNext from "./../assets/img/icons/beTheNext.svg";
+import star from "./../assets/img/icons/star.svg";
+import glassdoor from "./../assets/img/icons/glassdoor.svg";
+import marker from "./../assets/img/icons/tine.svg";
+import clock from "./../assets/img/icons/location.svg";
 
 import mainHome from "./../assets/img/main/home.svg";
 import mainAbout from "./../assets/img/main/about.svg";
@@ -62,6 +66,10 @@ const defaultImages = {
     logoMin,
     logoFooter,
     beTheNext,
+    star,
+    glassdoor,
+    marker,
+    clock,
 };
 
 const mainScreenImages = {

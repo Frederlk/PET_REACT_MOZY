@@ -53,7 +53,7 @@
         @media (max-width: em(650)) {
             gap: rem(30);
             grid-template-columns: 1fr;
-            grid-auto-rows: 1fr;
+            grid-auto-rows: auto;
         }
     }
 
@@ -110,6 +110,263 @@
         height: 100%;
         @media (max-width: em(650)) {
             @include adaptiveValue("min-height", 350, 250, 650, 320, 1);
+        }
+    }
+}
+
+.progress {
+    max-width: rem(110);
+}
+
+//========================================================================================================================================================
+
+.progress-circle {
+    position: relative;
+    &__donut-ring {
+    }
+
+    &__donut-segment {
+    }
+
+    &__percents {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-45%, -50%);
+        font-size: rem(27);
+        line-height: math.div(48, 27);
+        color: $secondary-2;
+    }
+}
+
+//========================================================================================================================================================
+
+.join {
+    padding: rem(50) 0;
+    &__container {
+    }
+
+    &__progress {
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 128, 70, 1110, 767.98, 1);
+        }
+    }
+
+    &__heading {
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 100, 50, 1110, 767.98, 1);
+        }
+    }
+
+    &__jobs {
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 70, 35, 1110, 767.98, 1);
+        }
+    }
+    &__button-wrap {
+        text-align: center;
+    }
+
+    &__button {
+        @media (max-width: $mobileSmall) {
+            width: 100%;
+        }
+    }
+}
+.progress-join {
+    display: flex;
+    align-items: center;
+    padding: rem(35) rem(125) rem(35) rem(70);
+    gap: rem(20);
+    background-color: $light-1;
+    box-shadow: 0px 0px rem(8) rgba(22, 23, 72, 0.07), 0px rem(25) rem(35) rgba(22, 23, 72, 0.05);
+    border-radius: rem(8);
+    @media (max-width: $tablet) {
+        padding: rem(35);
+    }
+    @media (max-width: $mobile) {
+        padding: rem(30);
+    }
+    @media (max-width: em(700)) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__circle {
+        flex: 0 0 rem(110);
+    }
+    &__svg {
+    }
+
+    &__title {
+        font-weight: 700;
+        line-height: math.div(48, 36);
+        color: $primary;
+        flex: 0 1 auto;
+        @include adaptiveValue("font-size", 36, 26, 991.98, 700, 1);
+        @media (max-width: $mobileSmall) {
+            flex: 1 1 100%;
+        }
+        p {
+            max-width: rem(440);
+            @media (max-width: em(700)) {
+                text-align: center;
+                max-width: rem(250);
+            }
+            @media (max-width: $mobileSmall) {
+                max-width: none;
+            }
+        }
+    }
+
+    &__rating-wrap {
+        justify-self: flex-end;
+        flex: 0 0 rem(232);
+        display: flex;
+        flex-direction: column;
+        gap: rem(5);
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__label {
+        margin: 0px auto;
+        @include adaptiveValue("max-width", 180, 150, 1110, 700, 1);
+        img {
+            max-width: 100%;
+        }
+    }
+
+    &__rating {
+    }
+
+    &__read {
+        display: flex;
+        gap: rem(10);
+        align-items: center;
+        span {
+            font-weight: 700;
+            font-size: rem(18);
+            line-height: math.div(24, 18);
+            text-decoration-line: underline;
+            color: #424b5a;
+        }
+        svg {
+            flex: 0 0 rem(16);
+        }
+    }
+}
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__value {
+        font-weight: 700;
+        line-height: math.div(62, 36);
+        margin-right: rem(5);
+        @include adaptiveValue("font-size", 36, 26, 991.98, 700, 1);
+    }
+
+    &__star {
+        flex: 0 0 rem(36);
+        img {
+            max-width: 100%;
+        }
+        @media (max-width: $tablet) {
+            flex: 0 0 rem(30);
+        }
+    }
+}
+
+.jobs-join {
+    &__item {
+        background-color: $white;
+        box-shadow: 0px 0px rem(8) rgba(22, 23, 72, 0.07), 0px rem(17) rem(35) rgba(22, 23, 72, 0.05);
+        border-radius: rem(8);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: rem(20);
+        padding: rem(35) rem(60);
+        @media (max-width: $tablet) {
+            padding: rem(35);
+        }
+        @media (max-width: $mobile) {
+            padding: rem(30);
+        }
+        @media (max-width: em(550)) {
+            margin: 0px rem(-15);
+            padding: rem(20) rem(15);
+        }
+        @media (max-width: $mobileSmall) {
+            flex-wrap: wrap;
+        }
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 30, 25, 767.98, 479.98, 1);
+        }
+
+        transition: all 0.3s ease 0s;
+        @media (any-hover: hover) {
+            &:hover {
+                box-shadow: 0px 0px rem(18) rgba(22, 23, 72, 0.1), 0px rem(27) rem(45) rgba(22, 23, 72, 0.1);
+            }
+        }
+    }
+
+    &__info {
+        flex: 1 1 auto;
+        @media (max-width: $mobileSmall) {
+            flex: 1 1 100%;
+            text-align: center;
+        }
+    }
+
+    &__title {
+        line-height: math.div(30, 28);
+        @include adaptiveValue("font-size", 28, 20, 1110, 767.98, 1);
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 24, 16, 1110, 767.98, 1);
+        }
+
+        transition: all 0.3s ease 0s;
+        @media (any-hover: hover) {
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        @include adaptiveValue("gap", 25, 16, 767.98, 479.98, 1);
+        @media (max-width: $mobileSmall) {
+            justify-content: center;
+        }
+    }
+
+    &__time,
+    &__place {
+        display: flex;
+        align-items: center;
+        gap: rem(6);
+        color: $gray-2;
+    }
+
+    &__icon {
+        flex: 0 0 rem(22);
+        img {
+            max-width: 100%;
+        }
+    }
+
+    &__place {
+    }
+
+    &__button {
+        flex: 0 0 rem(155);
+        @media (max-width: $mobileSmall) {
+            flex: 1 1 100%;
         }
     }
 }
