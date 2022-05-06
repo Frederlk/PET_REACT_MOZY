@@ -10,6 +10,7 @@ const Page404 = lazy(() => import("./_pages/Page404")),
     Home = lazy(() => import("./_pages/Home")),
     About = lazy(() => import("./_pages/About")),
     Career = lazy(() => import("./_pages/Career")),
+    Contacts = lazy(() => import("./_pages/Contacts")),
     Products = lazy(() => import("./_pages/Products"));
 
 const ScrollToTop = () => {
@@ -38,6 +39,7 @@ const App = () => {
                         <Route path="/products" element={<Products />} />
                         <Route path="/about" element={<About />} />
                         <Route path="/career" element={<Career />} />
+                        <Route path="/contact" element={<Contacts />} />
                         <Route path="*" element={<Page404 />} />
                     </Routes>
                 </Suspense>

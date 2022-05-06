@@ -21,9 +21,9 @@ const Career = () => {
                 imgAlt="Career">
                 <>
                     <div className="main-screen__selected">Dreamers</div>
-                    <Link to="#" className="main-screen__button button button_outline">
+                    <a href="#" className="main-screen__button button button_outline">
                         View open roles
-                    </Link>
+                    </a>
                 </>
             </MainScreen>
             <OfferCareer className="career-page__offer" />

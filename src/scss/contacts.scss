@@ -1,0 +1,14 @@
+.contacts-page {
+    &__main-screen {
+        .main-screen__content {
+            flex: 0 0 percent(510, 1110);
+            @include adaptiveValue("margin-bottom", 140, 70, 1110, 767.98, 1);
+        }
+        .main-screen__image {
+            margin-right: 0;
+            @media (min-width: $mobile) {
+                flex: 0 0 percent(660, 1110);
+            }
+        }
+    }
+}
