@@ -6,6 +6,8 @@ import star from "./../assets/img/icons/star.svg";
 import glassdoor from "./../assets/img/icons/glassdoor.svg";
 import marker from "./../assets/img/icons/tine.svg";
 import clock from "./../assets/img/icons/location.svg";
+import indiaFlag from "./../assets/img/flags/india.png";
+import ukFlag from "./../assets/img/flags/uk.png";
 
 import mainHome from "./../assets/img/main/home.svg";
 import mainAbout from "./../assets/img/main/about.svg";
@@ -70,6 +72,8 @@ const defaultImages = {
     glassdoor,
     marker,
     clock,
+    ukFlag,
+    indiaFlag,
 };
 
 const mainScreenImages = {

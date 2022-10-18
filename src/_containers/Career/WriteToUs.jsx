@@ -13,7 +13,7 @@ const WriteToUs = ({ className }) => {
                     text="We are always on the lookout for great people. Tell us why you want to join us."
                 />
                 <div className="write-to-us__button-wrap">
-                    <Link to="/contacts" className="write-to-us__button button">
+                    <Link to="/contact" className="write-to-us__button button">
                         Write to us
                     </Link>
                 </div>

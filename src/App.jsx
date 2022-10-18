@@ -1,6 +1,6 @@
 import { lazy, Suspense, useEffect } from "react";
-import * as flsFunctions from "./js/files/functions";
-import dynamicAdaptive from "./js/libs/dynamic_adapt";
+import * as flsFunctions from "./js/functions";
+import dynamicAdaptive from "./js/dynamic_adapt";
 import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 
 import { Header, Footer } from "./_containers";
@@ -18,16 +18,15 @@ const ScrollToTop = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
         flsFunctions.menuClose();
+        flsFunctions.addTouchClass();
+        flsFunctions.fullVHfix();
+        flsFunctions.menuInit();
+        dynamicAdaptive();
     }, [pathname]);
     return null;
 };
 
 const App = () => {
-    useEffect(() => {
-        flsFunctions.menuInit();
-        dynamicAdaptive();
-    }, []);
-
     return (
         <Router>
             <ScrollToTop />

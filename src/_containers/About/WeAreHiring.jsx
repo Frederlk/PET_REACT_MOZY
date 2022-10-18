@@ -13,7 +13,7 @@ const WeAreHiring = ({ className }) => {
                         title="We are hiring!"
                         text="Help us build tools for the future. We’re looking for curious and smart people to join forces with us and grow together."
                     />
-                    <Link to="/hiring" className="are-hiring__button button button_outline">
+                    <Link to="/career" className="are-hiring__button button button_outline">
                         Join the squad
                     </Link>
                     <div className="are-hiring__label">

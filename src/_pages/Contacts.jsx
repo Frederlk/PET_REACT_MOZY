@@ -1,11 +1,24 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
-import { images } from "../constants";
+import { data, images } from "../constants";
 
 import { MainScreen } from "../_components";
+import { Form } from "../_containers";
 
 const Contacts = () => {
+    const addressItems = data.adressItems.map(({ img, imgAlt, title, address }, i) => (
+        <div key={title + i} className="places-contacts__item">
+            <div className="places-contacts__top">
+                <div className="places-contacts__icon">
+                    <img src={img} alt={imgAlt} />
+                </div>
+                <h6 className="places-contacts__title">{title}</h6>
+            </div>
+            <div className="places-contacts__address">{address}</div>
+        </div>
+    ));
+
     return (
         <>
             <Helmet>
@@ -26,6 +39,12 @@ const Contacts = () => {
                     </Link>
                 </>
             </MainScreen>
+            <section className="contacts-page__info info-contacts">
+                <div className="info-contacts__container">
+                    <Form />
+                    <div className="info-contacts__places places-contacts">{addressItems.length && addressItems}</div>
+                </div>
+            </section>
         </>
     );
 };

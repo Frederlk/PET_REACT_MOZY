@@ -240,6 +240,36 @@ const jobsItems = [
     },
 ];
 
+const { defaultImages } = images;
+const adressItems = [
+    {
+        img: defaultImages.ukFlag,
+        imgAlt: "United Kingdom",
+        title: "London",
+        address: `Mozi Limited 
+        3 Warren Yard, Wolverton Mill
+        Milton Keynes England
+        UK – MK12 5NW`,
+    },
+    {
+        img: defaultImages.indiaFlag,
+        imgAlt: "India",
+        title: "New Delhi",
+        address: `Mozi Technologies Pvt Ltd 
+        First Floor, Sahya Building, Govt. Cyberpark, Nellikode P.O.
+        Kozhikode, Kerala, India – 673016`,
+    },
+    {
+        img: defaultImages.indiaFlag,
+        imgAlt: "India",
+        title: "Bengaluru",
+        address: `Mozi Technologies Pvt LtdBrigade IRV Centre 
+        Nallurahalli Whitefield
+        Bengaluru, Karnataka
+        India – 560066`,
+    },
+];
+
 export default {
     brandsItems,
     productItems,
@@ -250,4 +280,5 @@ export default {
     aboutBlockItems,
     lifeItems,
     jobsItems,
+    adressItems,
 };

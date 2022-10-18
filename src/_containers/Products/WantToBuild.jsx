@@ -16,7 +16,7 @@ const WantToBuild = () => {
                     <Link to="/about" className="want-products__button button">
                         About us
                     </Link>
-                    <Link to="/hiring" className="want-products__button button button_outline">
+                    <Link to="/career" className="want-products__button button button_outline">
                         Join the team
                     </Link>
                 </div>

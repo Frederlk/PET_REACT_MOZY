@@ -320,6 +320,12 @@
         box-shadow: 0px 0px rem(8) rgba(22, 23, 72, 0.07), 0px rem(25) rem(35) rgba(22, 23, 72, 0.05);
         border-radius: rem(8);
         @include adaptiveValue("padding", 40, 20, 1110, 479.98, 1);
+        transition: all 0.3s ease 0s;
+        @media (any-hover: hover) {
+            &:hover {
+                box-shadow: 0px 0px rem(18) rgba(22, 23, 72, 0.1), 0px rem(35) rem(45) rgba(22, 23, 72, 0.1);
+            }
+        }
     }
 
     &__title {
@@ -356,6 +362,7 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+    max-width: 60%;
 }
 
 .page404 {

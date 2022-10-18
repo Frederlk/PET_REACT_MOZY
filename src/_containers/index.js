@@ -16,3 +16,5 @@ export { default as LifeMozy } from "./Career/LifeMozy";
 export { default as Join } from "./Career/Join";
 export { default as OfferCareer } from "./Career/OfferCareer";
 export { default as WriteToUs } from "./Career/WriteToUs";
+
+export { default as Form } from "./Contacts/Form";

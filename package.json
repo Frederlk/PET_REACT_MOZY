@@ -7,6 +7,7 @@
     "@testing-library/react": "^13.1.1",
     "@testing-library/user-event": "^13.5.0",
     "date-fns": "^2.28.0",
+    "formik": "^2.2.9",
     "html-react-parser": "^1.4.12",
     "inputmask": "latest",
     "lightgallery": "latest",
@@ -23,7 +24,8 @@
     "smooth-scroll": "latest",
     "swiper": "latest",
     "tippy.js": "latest",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "yup": "^0.32.11"
   },
   "scripts": {
     "start": "react-scripts start",
