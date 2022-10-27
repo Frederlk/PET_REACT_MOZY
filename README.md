@@ -28,7 +28,7 @@ May, 2022
 
 ![Mozy_2](https://firebasestorage.googleapis.com/v0/b/petrinich-sergey----portfolio.appspot.com/o/PET_Mozy%2FMozy_2.jpg?alt=media&token=f48467f5-09c7-4366-a01b-5889cf67efbd)
 
-![Mozy_3](https://firebasestorage.googleapis.com/v0/b/petrinich-sergey----portfolio.appspot.com/o/PET_Mozy%2FMozy_3.jpg?alt=media&token=e1a3c63d-ac62-4ad8-bc8f-102225b87c24)
+![Mozy_4](https://firebasestorage.googleapis.com/v0/b/petrinich-sergey----portfolio.appspot.com/o/PET_Mozy%2FMozy_4.jpg?alt=media&token=ddc9e50b-d8a8-4ae7-9dbe-e55b1813c768)
 
 ![Mozy_5](https://firebasestorage.googleapis.com/v0/b/petrinich-sergey----portfolio.appspot.com/o/PET_Mozy%2FMozy_5.jpg?alt=media&token=c65326ad-6b9e-4a7f-a688-4917d3a4b202)
 
@@ -36,4 +36,5 @@ May, 2022
 
 ![Mozy_7](https://firebasestorage.googleapis.com/v0/b/petrinich-sergey----portfolio.appspot.com/o/PET_Mozy%2FMozy_7.jpg?alt=media&token=96866389-f041-49d0-b13e-484b145f48ad)
 
-![Mozy_4](https://firebasestorage.googleapis.com/v0/b/petrinich-sergey----portfolio.appspot.com/o/PET_Mozy%2FMozy_4.jpg?alt=media&token=ddc9e50b-d8a8-4ae7-9dbe-e55b1813c768)
+![Mozy_3](https://firebasestorage.googleapis.com/v0/b/petrinich-sergey----portfolio.appspot.com/o/PET_Mozy%2FMozy_3.jpg?alt=media&token=e1a3c63d-ac62-4ad8-bc8f-102225b87c24)
+
